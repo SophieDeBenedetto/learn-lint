@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
-  spec.files = ['lib/learn_linter.rb', 'bin/learn-lint', 'lib/learn_linter/learn_error.rb', 'lib/learn_linter/license_linter.rb', 'lib/learn_linter/readme_linter.rb', 'lib/learn_linter/valid_license.rb', 'lib/learn_linter/version.rb', 'lib/learn_linter/yaml_linter.rb'] 
+  spec.files = ['lib/learn_linter.rb', 'bin/learn-lint', 'lib/learn_linter/learn_error.rb', 'lib/learn_linter/license_linter.rb', 'lib/learn_linter/readme_linter.rb', 'lib/learn_linter/valid_license.md', 'lib/learn_linter/version.rb', 'lib/learn_linter/yaml_linter.rb'] 
   spec.executables << 'learn-lint'
   spec.require_paths = ["lib"]
 
