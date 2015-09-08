@@ -14,7 +14,7 @@ class LearnError < StandardError
     @readme_error = {present_readme: false, valid_readme: false}
     @license_error = {present_license: false, valid_license: false}
     @correct_yaml_content = {message: ".learn file must have 'tags', 'resources' and 'languages' keys", color: :yellow}
-    @valid_yaml = {message: "invalid yaml", color: :red}
+    @valid_yaml = {message: "invalid yaml or missing .learn", color: :red}
     @valid_license = {message: "invalid or missing license content", color: :yellow}
     @valid_readme = {message: "invalid code snippet. Must have three backticks to open and close all code snippets", color: :red}
     @present_learn = {message: "missing .learn file", color: :red}

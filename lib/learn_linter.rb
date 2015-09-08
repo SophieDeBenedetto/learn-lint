@@ -9,8 +9,8 @@ class LearnLinter
   attr_accessor :filepath, :quiet
 
 
-  def initialize(filepath, quiet=nil)
-    @filepath = filepath
+  def initialize(dir=nil, quiet=nil)
+    @filepath = dir || Dir.pwd
     @learn_error = LearnError.new
     @quiet = quiet
   end
