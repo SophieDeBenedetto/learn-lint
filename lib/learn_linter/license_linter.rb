@@ -12,6 +12,7 @@ class LicenseLinter
   end
 
   def self.sanitize_whitespace(file)
-    file.split("\n").delete_if { |l| l.empty? }
+    paragraphs = file.split("\n").delete_if { |l| l.empty? }
+    paragraphs.join(" ").split(" ")
   end
 end
